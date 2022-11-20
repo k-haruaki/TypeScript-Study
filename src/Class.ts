@@ -48,3 +48,30 @@ var s1 = new Something();
 var s2 = new Something();
 var s3 = new Something();
 console.log(Something.instances);
+
+
+// アクセス修飾子
+class FooBase {
+    public x: number;
+    protected y : number;
+    private z : number;
+}
+
+// インスタンスにおける効果
+var foo = new FooBase();
+foo.x;
+// protectedのためエラーになる
+// foo.y;  
+
+// privateのためエラーになる
+// foo.z;
+
+class FooChild extends FooBase {
+    constructor() {
+        super();
+        this.x;
+        this.y;
+        // privateのためエラーになる
+        // this.z;
+    }
+}
