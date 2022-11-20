@@ -1,0 +1,1 @@
+{"version":3,"file":"Closure.js","sourceRoot":"","sources":["../src/Closure.ts"],"names":[],"mappings":"AAAA,SAAS,aAAa,CAAC,GAAY;IAC/B,IAAI,uBAAuB,GAAG,GAAG,CAAC;IAElC,SAAS,GAAG;QACR,OAAO,CAAC,GAAG,CAAC,uBAAuB,CAAC,CAAC;IACzC,CAAC;IAED,GAAG,EAAE,CAAC;AACV,CAAC;AAED,aAAa,CAAC,eAAe,CAAC,CAAC"}

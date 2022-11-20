@@ -1,4 +1,4 @@
-// よくない例
+// 悪い例
 // strが「undefined」や「null」などの場合は変換されない
 const toInt = (str) => {
     return str ? parseInt(str) : undefined;
