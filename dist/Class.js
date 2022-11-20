@@ -25,4 +25,14 @@ var p4 = new Point3D(10, 20, 30);
 var p5 = new Point3D(40, 50, 60);
 var p6 = p4.add(p5);
 console.log(p6);
+class Something {
+    constructor() {
+        Something.instances++;
+    }
+}
+Something.instances = 0;
+var s1 = new Something();
+var s2 = new Something();
+var s3 = new Something();
+console.log(Something.instances);
 //# sourceMappingURL=Class.js.map

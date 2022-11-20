@@ -1,3 +1,4 @@
+// クラスについて
 class Point {
     x: number;
     y: number;
@@ -16,6 +17,7 @@ var p3 = p1.add(p2);
 console.log(p3)
 
 
+// 軽症について
 class Point3D extends Point {
     z: number;
     constructor(x: number, y: number, z: number) {
@@ -32,3 +34,17 @@ var p4 = new Point3D(10, 20, 30);
 var p5 = new Point3D(40, 50, 60);
 var p6 = p4.add(p5);
 console.log(p6);
+
+
+// 静的メンバについて
+class Something {
+    static instances = 0;
+    constructor() {
+        Something.instances++;
+    }
+}
+
+var s1 = new Something();
+var s2 = new Something();
+var s3 = new Something();
+console.log(Something.instances);
