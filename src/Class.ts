@@ -75,3 +75,32 @@ class FooChild extends FooBase {
         // this.z;
     }
 }
+
+
+// // Abstruct修飾子
+// abstract class FooCommand {}
+
+// class BarCommand extends FooCommand {}
+
+// // 抽象クラスのインスタンスは作成できない
+// // const fooCommand: FooCommand = new FooCommand();
+
+// // 抽象クラスを継承したクラスのインスタンスは作成できる
+// const barCommand = new BarCommand();
+
+
+abstract class FooCommand {
+//   abstract execute(): string;
+}
+
+class BarErrorCommand extends FooCommand {} // 'BarErrorCommand'は抽象メンバー'execute'を実装する必要があります
+
+class BarCommand extends FooCommand {
+  execute() {
+    return `コマンドBarが実行されました`;
+  }
+}
+
+const barCommand = new BarCommand();
+
+barCommand.execute(); // コマンドBarが実行されました
