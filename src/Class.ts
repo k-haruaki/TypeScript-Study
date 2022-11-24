@@ -77,6 +77,9 @@ class FooChild extends FooBase {
 }
 
 
+
+
+
 // // Abstruct修飾子
 // abstract class FooCommand {}
 
@@ -104,3 +107,29 @@ class BarCommand extends FooCommand {
 const barCommand = new BarCommand();
 
 barCommand.execute(); // コマンドBarが実行されました
+
+
+// コンストラクタの定義
+class Foo {
+    x: number;
+    constructor(x: number) {
+        this.x = x;
+    }
+}
+
+// 上の例の短縮版
+// class Foo {
+//     constructor(public x: number) {
+
+//     }
+// }
+
+
+// プロパティ初期化子
+// 例文のmembersで型を指定しないとエラーになるため、型の指定が必要
+class Bar {
+    members: string[] = [];  // コンストラクタなしで直接メンバ変数を初期化できます
+    add(x: string) {
+        this.members.push(x);
+    }
+}
