@@ -117,13 +117,6 @@ class Foo {
     }
 }
 
-// 上の例の短縮版
-// class Foo {
-//     constructor(public x: number) {
-
-//     }
-// }
-
 
 // プロパティ初期化子
 // 例文のmembersで型を指定しないとエラーになるため、型の指定が必要
