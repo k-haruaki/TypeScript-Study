@@ -76,22 +76,6 @@ class FooChild extends FooBase {
     }
 }
 
-
-
-
-
-// // Abstruct修飾子
-// abstract class FooCommand {}
-
-// class BarCommand extends FooCommand {}
-
-// // 抽象クラスのインスタンスは作成できない
-// // const fooCommand: FooCommand = new FooCommand();
-
-// // 抽象クラスを継承したクラスのインスタンスは作成できる
-// const barCommand = new BarCommand();
-
-
 abstract class FooCommand {
 //   abstract execute(): string;
 }
