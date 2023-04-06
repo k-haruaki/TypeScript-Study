@@ -105,3 +105,8 @@ class Bar {
     this.members.push(x);
   }
 }
+
+type Human = {
+  name: string;
+  age: number;
+};
