@@ -110,3 +110,8 @@ type Human = {
   name: string;
   age: number;
 };
+
+type Building = {
+  width: number;
+  height: number;
+};
