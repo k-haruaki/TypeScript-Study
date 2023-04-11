@@ -106,3 +106,42 @@ class Bar {
   }
 }
 
+type Name = {
+  firstName: string;
+  lastName: string;
+};
+
+interface IName {
+  firstName: string;
+  lastName: string;
+}
+
+interface Profile extends IName {
+  age: number;
+}
+
+interface A extends Name {
+  age: number;
+}
+
+const myName: Profile = {
+  firstName: "kawahira",
+  lastName: "haruaki",
+  age: 29,
+};
+
+const myName2: A = {
+  firstName: "kawahira",
+  lastName: "haruaki",
+  age: 29,
+};
+
+interface IName {
+  age: number;
+}
+
+const myName3: IName = {
+  firstName: "kawahira",
+  lastName: "haruaki",
+  age: 29, // 定義は違うが、INameはinterfaceで再定義しているので、ageが必要になる
+};
