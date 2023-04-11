@@ -111,9 +111,16 @@ type Name = {
   lastName: string;
 };
 
+// typeは同じ名前のものを定義しようとするとエラーになる
+// type Name = {}
+
 interface IName {
   firstName: string;
   lastName: string;
+}
+
+interface IName {
+  age: number;
 }
 
 interface Profile extends IName {
@@ -135,10 +142,6 @@ const myName2: A = {
   lastName: "haruaki",
   age: 29,
 };
-
-interface IName {
-  age: number;
-}
 
 const myName3: IName = {
   firstName: "kawahira",
