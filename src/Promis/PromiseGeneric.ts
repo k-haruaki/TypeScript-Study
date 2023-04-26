@@ -27,6 +27,7 @@ const promise: Promise<boolean> = Promise.resolve("1")
   .then((value) => Number(value))
   .then((value) => value > 0);
 
+// Promiseのrejectの説明
 // コールバック内で例外を投げるとそのPromiseは拒否される
 Promise.resolve(1)
   .then(() => {
@@ -52,3 +53,19 @@ Promise.resolve(1)
     console.log("rejected");
   });
 // @log: rejected
+
+// 非同期処理の拒否の結果をコールバックで実行する
+// 例：thenのたびに新しく定数を定義する
+const promise3: Promise<number> = Promise.reject(new Error());
+const promise4: Promise<string> = promise3.catch((e) => e.message);
+
+Promise.resolve(1)
+  .then((num: number) => {
+    return `${num}`;
+  })
+  .then((str: string) => {
+    return str.length > 1;
+  })
+  .catch((e) => {
+    console.log(e.message);
+  });
