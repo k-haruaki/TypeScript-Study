@@ -1,11 +1,11 @@
-function outerFunction(arg : string) {
-    var variableInOtherFunction = arg;
+function outerFunction(arg: string) {
+  var variableInOtherFunction = arg;
 
-    function bar() {
-        console.log(variableInOtherFunction);
-    }
+  function bar() {
+    console.log(variableInOtherFunction);
+  }
 
-    bar();
+  bar();
 }
 
-outerFunction('Hello Closure');
+outerFunction("Hello Closure");
