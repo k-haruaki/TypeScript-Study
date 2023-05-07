@@ -9,3 +9,7 @@ const Component = (props: Props) => {
 const Component2 = ({ children }: Props) => {
   return <div>{children}</div>;
 };
+
+const Component3 = ({ children }: { children: React.ReactNode }) => {
+  return <div>{children}</div>;
+};
