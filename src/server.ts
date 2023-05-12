@@ -7,7 +7,7 @@ const sum = (a: number, b: number): number => {
   return a + b;
 };
 
-// 結果表示
+// 足し算の結果表示
 const result = sum(a, b);
 console.log(`${a} + ${b} = ${result}です`);
 
@@ -16,6 +16,6 @@ const minus = (a: number, b: number): number => {
   return a - b;
 };
 
-// 結果表示
+// 引き算の結果表示
 const minusResult = minus(a, b);
 console.log(`${a} - ${b} = ${minusResult}です`);
