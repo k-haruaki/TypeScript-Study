@@ -12,4 +12,3 @@ const sampleObject = {
 // tokyo に対応する値を取得する
 const objectResult = sampleObject.tokyo;
 console.log(objectResult); // output: 13995469
-console.log(objectResult); // output: 13995469
