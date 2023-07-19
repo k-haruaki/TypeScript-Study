@@ -90,12 +90,12 @@ const barCommand = new BarCommand();
 barCommand.execute(); // コマンドBarが実行されました
 
 // コンストラクタの定義
-class Foo {
-  x: number;
-  constructor(x: number) {
-    this.x = x;
-  }
-}
+// class Foo {
+//   x: number;
+//   constructor(x: number) {
+//     this.x = x;
+//   }
+// }
 
 // プロパティ初期化子
 // 例文のmembersで型を指定しないとエラーになるため、型の指定が必要
