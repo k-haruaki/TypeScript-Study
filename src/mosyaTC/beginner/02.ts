@@ -48,3 +48,6 @@ type title = Todo["title"]; // string
 type MyReadonly<T> = {
   readonly [K in keyof T]: T[K];
 };
+
+// 2つ渡すことができるかチェック
+type MyReadonly2<T, K> = {};
